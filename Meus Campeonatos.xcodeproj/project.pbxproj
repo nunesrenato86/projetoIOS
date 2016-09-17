@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C247DF551D8D846500500641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C247DF541D8D846500500641 /* AppDelegate.swift */; };
+		C247DF571D8D846500500641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C247DF561D8D846500500641 /* ViewController.swift */; };
+		C247DF5A1D8D846500500641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C247DF581D8D846500500641 /* Main.storyboard */; };
+		C247DF5D1D8D846500500641 /* Meus_Campeonatos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C247DF5B1D8D846500500641 /* Meus_Campeonatos.xcdatamodeld */; };
+		C247DF5F1D8D846500500641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C247DF5E1D8D846500500641 /* Assets.xcassets */; };
+		C247DF621D8D846500500641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C247DF601D8D846500500641 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C247DF511D8D846500500641 /* Meus Campeonatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meus Campeonatos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C247DF541D8D846500500641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C247DF561D8D846500500641 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C247DF591D8D846500500641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C247DF5C1D8D846500500641 /* Meus_Campeonatos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Meus_Campeonatos.xcdatamodel; sourceTree = "<group>"; };
+		C247DF5E1D8D846500500641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C247DF611D8D846500500641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C247DF631D8D846500500641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C247DF4E1D8D846500500641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C247DF481D8D846500500641 = {
+			isa = PBXGroup;
+			children = (
+				C247DF531D8D846500500641 /* Meus Campeonatos */,
+				C247DF521D8D846500500641 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C247DF521D8D846500500641 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C247DF511D8D846500500641 /* Meus Campeonatos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C247DF531D8D846500500641 /* Meus Campeonatos */ = {
+			isa = PBXGroup;
+			children = (
+				C247DF541D8D846500500641 /* AppDelegate.swift */,
+				C247DF561D8D846500500641 /* ViewController.swift */,
+				C247DF581D8D846500500641 /* Main.storyboard */,
+				C247DF5E1D8D846500500641 /* Assets.xcassets */,
+				C247DF601D8D846500500641 /* LaunchScreen.storyboard */,
+				C247DF631D8D846500500641 /* Info.plist */,
+				C247DF5B1D8D846500500641 /* Meus_Campeonatos.xcdatamodeld */,
+			);
+			path = "Meus Campeonatos";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C247DF501D8D846500500641 /* Meus Campeonatos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C247DF661D8D846500500641 /* Build configuration list for PBXNativeTarget "Meus Campeonatos" */;
+			buildPhases = (
+				C247DF4D1D8D846500500641 /* Sources */,
+				C247DF4E1D8D846500500641 /* Frameworks */,
+				C247DF4F1D8D846500500641 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Meus Campeonatos";
+			productName = "Meus Campeonatos";
+			productReference = C247DF511D8D846500500641 /* Meus Campeonatos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C247DF491D8D846500500641 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Renato Nunes de Nunes";
+				TargetAttributes = {
+					C247DF501D8D846500500641 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = C247DF4C1D8D846500500641 /* Build configuration list for PBXProject "Meus Campeonatos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C247DF481D8D846500500641;
+			productRefGroup = C247DF521D8D846500500641 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C247DF501D8D846500500641 /* Meus Campeonatos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C247DF4F1D8D846500500641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C247DF621D8D846500500641 /* LaunchScreen.storyboard in Resources */,
+				C247DF5F1D8D846500500641 /* Assets.xcassets in Resources */,
+				C247DF5A1D8D846500500641 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C247DF4D1D8D846500500641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C247DF571D8D846500500641 /* ViewController.swift in Sources */,
+				C247DF551D8D846500500641 /* AppDelegate.swift in Sources */,
+				C247DF5D1D8D846500500641 /* Meus_Campeonatos.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C247DF581D8D846500500641 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C247DF591D8D846500500641 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C247DF601D8D846500500641 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C247DF611D8D846500500641 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C247DF641D8D846500500641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C247DF651D8D846500500641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C247DF671D8D846500500641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Meus Campeonatos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.renatonunes.edm.camparonatos.Meus-Campeonatos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C247DF681D8D846500500641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Meus Campeonatos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.renatonunes.edm.camparonatos.Meus-Campeonatos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C247DF4C1D8D846500500641 /* Build configuration list for PBXProject "Meus Campeonatos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C247DF641D8D846500500641 /* Debug */,
+				C247DF651D8D846500500641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C247DF661D8D846500500641 /* Build configuration list for PBXNativeTarget "Meus Campeonatos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C247DF671D8D846500500641 /* Debug */,
+				C247DF681D8D846500500641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C247DF5B1D8D846500500641 /* Meus_Campeonatos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C247DF5C1D8D846500500641 /* Meus_Campeonatos.xcdatamodel */,
+			);
+			currentVersion = C247DF5C1D8D846500500641 /* Meus_Campeonatos.xcdatamodel */;
+			path = Meus_Campeonatos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C247DF491D8D846500500641 /* Project object */;
+}
