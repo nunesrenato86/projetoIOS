@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C247DF551D8D846500500641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C247DF541D8D846500500641 /* AppDelegate.swift */; };
-		C247DF571D8D846500500641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C247DF561D8D846500500641 /* ViewController.swift */; };
 		C247DF5A1D8D846500500641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C247DF581D8D846500500641 /* Main.storyboard */; };
 		C247DF5D1D8D846500500641 /* Meus_Campeonatos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C247DF5B1D8D846500500641 /* Meus_Campeonatos.xcdatamodeld */; };
 		C247DF5F1D8D846500500641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C247DF5E1D8D846500500641 /* Assets.xcassets */; };
 		C247DF621D8D846500500641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C247DF601D8D846500500641 /* LaunchScreen.storyboard */; };
+		C247DF6D1D8D899700500641 /* CampeonatosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C247DF6C1D8D899700500641 /* CampeonatosTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C247DF511D8D846500500641 /* Meus Campeonatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meus Campeonatos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C247DF541D8D846500500641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C247DF561D8D846500500641 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C247DF591D8D846500500641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C247DF5C1D8D846500500641 /* Meus_Campeonatos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Meus_Campeonatos.xcdatamodel; sourceTree = "<group>"; };
 		C247DF5E1D8D846500500641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C247DF611D8D846500500641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C247DF631D8D846500500641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C247DF6C1D8D899700500641 /* CampeonatosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampeonatosTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,47 @@
 		C247DF531D8D846500500641 /* Meus Campeonatos */ = {
 			isa = PBXGroup;
 			children = (
+				C247DF6E1D8D89B200500641 /* CampeonatoController */,
+				C247DF6A1D8D85B500500641 /* View */,
+				C247DF6B1D8D85C900500641 /* DataModel */,
+				C247DF691D8D851F00500641 /* SupportFiles */,
+			);
+			path = "Meus Campeonatos";
+			sourceTree = "<group>";
+		};
+		C247DF691D8D851F00500641 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
 				C247DF541D8D846500500641 /* AppDelegate.swift */,
-				C247DF561D8D846500500641 /* ViewController.swift */,
-				C247DF581D8D846500500641 /* Main.storyboard */,
 				C247DF5E1D8D846500500641 /* Assets.xcassets */,
 				C247DF601D8D846500500641 /* LaunchScreen.storyboard */,
 				C247DF631D8D846500500641 /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		C247DF6A1D8D85B500500641 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C247DF581D8D846500500641 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C247DF6B1D8D85C900500641 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
 				C247DF5B1D8D846500500641 /* Meus_Campeonatos.xcdatamodeld */,
 			);
-			path = "Meus Campeonatos";
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		C247DF6E1D8D89B200500641 /* CampeonatoController */ = {
+			isa = PBXGroup;
+			children = (
+				C247DF6C1D8D899700500641 /* CampeonatosTableViewController.swift */,
+			);
+			name = CampeonatoController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C247DF571D8D846500500641 /* ViewController.swift in Sources */,
 				C247DF551D8D846500500641 /* AppDelegate.swift in Sources */,
 				C247DF5D1D8D846500500641 /* Meus_Campeonatos.xcdatamodeld in Sources */,
+				C247DF6D1D8D899700500641 /* CampeonatosTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
