@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CampeonatosTableViewController: UITableViewController {
+class CampeonatosTableViewController: UITableViewController, UISplitViewControllerDelegate {
     
     
     // MARK: - Model
@@ -19,15 +19,17 @@ class CampeonatosTableViewController: UITableViewController {
         (ano:2016, categoria:"Segunda", parceiro:"Nícolas", nome:"Master 2E", local:"POA")
     ]
     
+    func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController: UIViewController, ontoPrimaryViewController primaryViewController: UIViewController) -> Bool {
+        
+        return true
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        self.splitViewController?.delegate = self
+        
     }
 
 
@@ -48,7 +50,13 @@ class CampeonatosTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = campeonatos[indexPath.row].nome
+        
+        if let celula = cell as? CampeonatoTableViewCell{
+            
+            let (ano, categoria, parceiro, nome, _) = campeonatos[indexPath.row]
+            
+            celula.configure(nome, ano, categoria, parceiro)
+        }
 
         return cell
     }
@@ -89,14 +97,36 @@ class CampeonatosTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        
+        if segue.identifier == "showDetail" {
+            if let indexPath = self.tableView.indexPathForSelectedRow{
+                let (ano, categoria, parceiro, nome, local) = campeonatos[indexPath.row]
+                
+                if let navcon = segue.destinationViewController as? UINavigationController{
+                    if let destino = navcon.visibleViewController as? CampeonatoDetalheViewController{
+                        destino.ano = ano
+                        destino.categoria = categoria
+                        destino.parceiro = parceiro
+                        destino.local = local
+                        destino.nome = nome
+                    }
+                }
+            }
+        
+        }
+        
+        
+        
+        
     }
-    */
+    
 
 }

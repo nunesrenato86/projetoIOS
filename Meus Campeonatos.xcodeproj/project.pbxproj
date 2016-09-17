@@ -13,6 +13,8 @@
 		C247DF5F1D8D846500500641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C247DF5E1D8D846500500641 /* Assets.xcassets */; };
 		C247DF621D8D846500500641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C247DF601D8D846500500641 /* LaunchScreen.storyboard */; };
 		C247DF6D1D8D899700500641 /* CampeonatosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C247DF6C1D8D899700500641 /* CampeonatosTableViewController.swift */; };
+		C247DF701D8DA8CE00500641 /* CampeonatoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C247DF6F1D8DA8CE00500641 /* CampeonatoTableViewCell.swift */; };
+		C247DF721D8DB70700500641 /* CampeonatoDetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C247DF711D8DB70700500641 /* CampeonatoDetalheViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C247DF611D8D846500500641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C247DF631D8D846500500641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C247DF6C1D8D899700500641 /* CampeonatosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampeonatosTableViewController.swift; sourceTree = "<group>"; };
+		C247DF6F1D8DA8CE00500641 /* CampeonatoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampeonatoTableViewCell.swift; sourceTree = "<group>"; };
+		C247DF711D8DB70700500641 /* CampeonatoDetalheViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CampeonatoDetalheViewController.swift; path = ../CampeonatoDetalheViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +98,9 @@
 		C247DF6E1D8D89B200500641 /* CampeonatoController */ = {
 			isa = PBXGroup;
 			children = (
+				C247DF711D8DB70700500641 /* CampeonatoDetalheViewController.swift */,
 				C247DF6C1D8D899700500641 /* CampeonatosTableViewController.swift */,
+				C247DF6F1D8DA8CE00500641 /* CampeonatoTableViewCell.swift */,
 			);
 			name = CampeonatoController;
 			sourceTree = "<group>";
@@ -172,7 +178,9 @@
 			files = (
 				C247DF551D8D846500500641 /* AppDelegate.swift in Sources */,
 				C247DF5D1D8D846500500641 /* Meus_Campeonatos.xcdatamodeld in Sources */,
+				C247DF701D8DA8CE00500641 /* CampeonatoTableViewCell.swift in Sources */,
 				C247DF6D1D8D899700500641 /* CampeonatosTableViewController.swift in Sources */,
+				C247DF721D8DB70700500641 /* CampeonatoDetalheViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
