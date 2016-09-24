@@ -19,7 +19,7 @@ class CampeonatosTableViewController: UITableViewController, UISplitViewControll
         (ano:2016, categoria:"Segunda", parceiro:"Nícolas", nome:"Master 2E", local:"POA")
     ]
     
-    func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController: UIViewController, ontoPrimaryViewController primaryViewController: UIViewController) -> Bool {
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
         
         return true
     }
@@ -34,26 +34,26 @@ class CampeonatosTableViewController: UITableViewController, UISplitViewControll
 
 
     // MARK: - Table view data source
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return campeonatos.count
     }
 
     
     //selecionar uma celula pra uma linha qualquer
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         // Configure the cell...
         
         if let celula = cell as? CampeonatoTableViewCell{
             
-            let (ano, categoria, parceiro, nome, _) = campeonatos[indexPath.row]
+            let (ano, categoria, parceiro, nome, _) = campeonatos[(indexPath as NSIndexPath).row]
             
             celula.configure(nome, ano, categoria, parceiro)
         }
@@ -101,16 +101,16 @@ class CampeonatosTableViewController: UITableViewController, UISplitViewControll
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
         
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow{
-                let (ano, categoria, parceiro, nome, local) = campeonatos[indexPath.row]
+                let (ano, categoria, parceiro, nome, local) = campeonatos[(indexPath as NSIndexPath).row]
                 
-                if let navcon = segue.destinationViewController as? UINavigationController{
+                if let navcon = segue.destination as? UINavigationController{
                     if let destino = navcon.visibleViewController as? CampeonatoDetalheViewController{
                         destino.ano = ano
                         destino.categoria = categoria

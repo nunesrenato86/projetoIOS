@@ -65,11 +65,11 @@ class CampeonatoDetalheViewController: UIViewController {
     }
     
     func updateUI(){
-        lblNomeDetalhe?.text = nome ?? ""
-        lblAnoDetalhe?.text = String(ano ?? 0)
-        lblLocalDetalhe?.text = local ?? ""
-        lblParceiroDetalhe?.text = parceiro ?? ""
-        lblCategoriaDetalhe?.text = categoria ?? ""
+        lblNomeDetalhe?.text = nome ?? "_"
+        lblAnoDetalhe?.text = String(ano ?? -12)
+        lblLocalDetalhe?.text = local ?? "_"
+        lblParceiroDetalhe?.text = parceiro ?? "_"
+        lblCategoriaDetalhe?.text = categoria ?? "_"
     }
     
     /*
