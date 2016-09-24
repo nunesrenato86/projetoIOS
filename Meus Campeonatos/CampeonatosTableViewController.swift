@@ -3,7 +3,7 @@
 //  Meus Campeonatos
 //
 //  Created by iossenac on 17/09/16.
-//  Copyright © 2016 Renato Nunes de Nunes. All rights reserved.
+//  Copyright © 2016 Renato Nunes de Nunes. All rights reserved.  swift 3
 //
 
 import UIKit
